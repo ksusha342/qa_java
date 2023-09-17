@@ -16,10 +16,12 @@ public class LionTest {
     Feline feline;
 
     Lion lion;
+    String sex;
 
     @Before
-    public void setUp() {
-        lion = new Lion(feline);
+    public void setUp() throws Exception {
+        sex = "Самка";
+        lion = new Lion(sex, feline);
     }
 
     @Test
